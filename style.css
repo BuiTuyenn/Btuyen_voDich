@@ -1,0 +1,197 @@
+/* style.css */
+
+/* Đặt nền cho toàn bộ trang với ảnh */
+body {
+    background-image: url('17f1fbece1e98127aa045039b06bd709.jpg'); /* Đường dẫn tới ảnh nền */
+    background-size: cover; /* Để ảnh phủ toàn bộ */
+    background-position: center; /* Căn giữa ảnh */
+    font-family: 'Times New Roman', Times, serif; /* Font chữ Times New Roman */
+}
+
+/* Nền cho container */
+.container {
+    background-color: rgba(255, 255, 255, 0); /* Đặt nền trong suốt */
+    border: none; /* Không có viền khung */
+    border-radius: 0; /* Bỏ bo góc nếu bạn muốn */
+    box-shadow: none; /* Bỏ đổ bóng nếu bạn muốn */
+    padding: 40px; /* Khoảng cách bên trong */
+    max-width: 400px; /* Chiều rộng tối đa */
+    margin: auto; /* Căn giữa khung */
+    margin-top: 100px; /* Khoảng cách từ trên xuống */
+}
+
+/* Đổi màu chữ trong các ô của bảng thành trắng */
+.table th, .table td {
+    color: white; /* Màu chữ trắng */
+    text-align: center; /* Căn giữa nội dung */
+    padding: 15px; /* Khoảng cách bên trong các ô */
+}
+
+/* Đổi màu nền cho các ô để dễ nhìn */
+.table {
+    background-color: rgba(0, 0, 0, 0.7); /* Màu nền tối với độ trong suốt */
+    height: auto; /* Tự động điều chỉnh chiều cao */
+    min-height: 100px; /* Chiều cao tối thiểu của bảng */
+}
+
+.thead-light th {
+    background-color: rgba(255, 255, 255, 0.3); /* Nền cho tiêu đề bảng */
+    color: white; /* Màu chữ cho tiêu đề bảng */
+}
+
+/* Tiêu đề */
+h2 {
+    text-align: center; /* Căn giữa */
+    margin-bottom: 50px; /* Khoảng cách dưới */
+    color: skyblue; /* Màu chữ trắng để dễ nhìn trên nền tối */
+}
+
+/* Các trường nhập liệu */
+.form-group label {
+    font-weight: bold; /* Làm đậm nhãn */
+    color: black; /* Màu chữ trắng */
+    text-align: left;
+}
+
+/* Nút đăng nhập */
+.btn-primary {
+    width: 100%; /* Chiếm toàn bộ chiều rộng */
+    padding: 12px; /* Khoảng cách bên trong */
+    font-size: 16px; /* Kích thước chữ */
+    background-color: rgba(0, 123, 255, 0.8); /* Màu nền nút với độ trong suốt */
+    border: none; /* Không có viền */
+    border-radius: 5px; /* Bo góc cho nút */
+    color: white; /* Màu chữ */
+    transition: background-color 0.3s, transform 0.3s; /* Hiệu ứng chuyển màu và phóng to */
+}
+
+.btn-primary:hover {
+    background-color: rgba(0, 86, 179, 0.8); /* Màu nền khi di chuột với độ trong suốt */
+    transform: translateY(-2px); /* Hiệu ứng di chuyển nhẹ */
+}
+
+/* Đoạn văn dưới form */
+p {
+    display: flex;
+    justify-content: center;
+    text-align: center; /* Căn giữa */
+    margin-top: 15px; /* Khoảng cách trên */
+    color: white; /* Màu chữ trắng */
+}
+
+/* Cảnh báo lỗi */
+.alert {
+    margin-top: 20px; /* Khoảng cách trên */
+    text-align: center; /* Căn giữa */
+    font-weight: bold; /* Làm đậm chữ */
+}
+.form-check-label {
+    color: #7b7a7a; /* Màu chữ trắng */
+}
+/* style.css */
+
+/* Căn chỉnh chiều rộng của các cột trong bảng */
+.table th:nth-child(1), /* Mã Sinh Viên */
+.table td:nth-child(1) {
+    width: 100px; /* Chiều rộng cho cột Mã Sinh Viên */
+}
+
+.table th:nth-child(2), /* Họ Đệm */
+.table td:nth-child(2) {
+    width: 150px; /* Chiều rộng cho cột Họ Đệm */
+}
+
+.table th:nth-child(3), /* Tên */
+.table td:nth-child(3) {
+    width: 100px; /* Chiều rộng cho cột Tên */
+}
+
+.table th:nth-child(4), /* Ngày Sinh */
+.table td:nth-child(4) {
+    width: 120px; /* Chiều rộng cho cột Ngày Sinh */
+}
+
+.table th:nth-child(5), /* Số Điện Thoại */
+.table td:nth-child(5) {
+    width: 120px; /* Chiều rộng cho cột Số Điện Thoại */
+}
+
+.table th:nth-child(6), /* Email */
+.table td:nth-child(6) {
+    width: 200px; /* Chiều rộng cho cột Email */
+}
+
+.table th:nth-child(7), /* Địa Chỉ */
+.table td:nth-child(7) {
+    width: 200px; /* Chiều rộng cho cột Địa Chỉ */
+}
+
+.table th:nth-child(8), /* Năm Nhập Học */
+.table td:nth-child(8) {
+    width: 100px; /* Chiều rộng cho cột Năm Nhập Học */
+}
+
+.table th:nth-child(9), /* Thao Tác */
+.table td:nth-child(9) {
+    width: 150px; /* Chiều rộng cho cột Thao Tác */
+}
+body {
+    overflow: hidden; /* Ẩn thanh cuộn */
+    transition: opacity 0.5s ease; /* Hiệu ứng mờ */
+}
+
+.fade-out {
+    opacity: 0; /* Mờ dần */
+    transition: opacity 0.5s ease;
+}
+
+.fade-in {
+    opacity: 1; /* Hiện dần */
+    transition: opacity 0.5s ease;
+}
+body {
+    display: flex;
+    justify-content: center; /* Căn giữa theo chiều ngang */
+    align-items: center; /* Căn giữa theo chiều dọc */
+    height: 100vh; /* Đảm bảo chiều cao bằng 100% viewport */
+    overflow: hidden; /* Ẩn thanh cuộn */
+}
+.table-container {
+    display: flex;
+    justify-content: center; /* Căn giữa theo chiều ngang */
+    align-items: center; /* Căn giữa theo chiều dọc */
+    height: 100vh; /* Đảm bảo chiều cao của khung chứa bằng chiều cao màn hình */
+}
+
+.table {
+    width: 80%; /* Hoặc một chiều rộng khác tùy thuộc vào thiết kế của bạn */
+}
+/* Thanh cuộn bên phải */
+.right {
+    height: 100vh; /* Đảm bảo chiều cao tối đa */
+    overflow-y: auto; /* Cho phép cuộn dọc */
+    padding: 20px; /* Khoảng cách bên trong */
+    background-color: rgba(255, 255, 255, 0.9); /* Nền sáng với độ trong suốt */
+    border-radius: 10px; /* Bo góc cho phần tử */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Đổ bóng cho phần tử */
+}
+
+/* Thanh cuộn cho các trình duyệt WebKit */
+.right::-webkit-scrollbar {
+    width: 12px; /* Độ rộng thanh cuộn */
+}
+
+.right::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.2); /* Màu nền của thanh cuộn */
+    border-radius: 10px; /* Bo góc */
+}
+
+.right::-webkit-scrollbar-thumb {
+    background: rgba(0, 123, 255, 0.8); /* Màu của thanh cuộn */
+    border-radius: 10px; /* Bo góc */
+}
+
+.right::-webkit-scrollbar-thumb:hover {
+    background: rgba(0, 86, 179, 0.8); /* Màu khi hover */
+}
+
